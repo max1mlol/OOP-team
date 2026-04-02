@@ -64,7 +64,7 @@ void showInfo() const override {
 };
 
 int main() {
-    triangle t("Triangle", "Red", 1.0, 1.0, 4.0); // Гурвалжны нэр, өнгө, дээд оройн координатууд, талын урт
+    triangle t("Triangle", "Red", 0.0, 0.0, 4.0); // Гурвалжны нэр, өнгө, дээд оройн координатууд, талын урт
     t.showInfo();
     return 0;
 }
