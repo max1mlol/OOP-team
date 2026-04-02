@@ -5,6 +5,5 @@ int main(){
     for(int i = 1; i <= 100; i++){  
         sum += i;  
     }
-    cout << "The sum of the first 100 natural numbers is: " << sum << endl;
     return 0;   
 }
