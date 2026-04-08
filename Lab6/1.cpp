@@ -133,6 +133,8 @@ void showInfo() const override {
     }
     cout << "Area: " << area() << endl;
     cout << "Perimeter: " << perimeter() << endl;
+    cout << "----------------------------------------------------" << endl;
+
 }
 };
 int main() {
