@@ -84,10 +84,16 @@ public:
 };
 
 int main() {
-    Square s("Square1", 0, 10, 4);
+    double x, y, side;
 
-    s.display();
-    cout << endl;
+    cout << "Zuun deed oroi (x y): ";
+    cin >> x >> y;
 
+    cout << "Taliin urt: ";
+    cin >> side;
+
+    Square sq("MySquare", x, y, side);
+
+    sq.display();
     return 0;
 }
