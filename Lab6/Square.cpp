@@ -1,8 +1,43 @@
 #include <iostream>
-#include <string>
 #include <cmath>
+#include <string>
+using namespace std;
 
+// Цэгийн бүтэц
+struct Point {
+    double x, y;
+};
 
+// 1. Эх класс: Shape
+
+class Shape {
+protected:
+    string name;
+
+public:
+    Shape(string n = "") {
+        name = n;
+    }
+
+    void setName(string n) {
+        name = n;
+    }
+
+    string getName() const {
+        return name;
+    }
+};
+
+// 2. Дэд эх класс: 2DShape
+
+class TwoDShape : public Shape {
+public:
+    TwoDShape(string n = "") : Shape(n) {}
+
+    virtual double area() const = 0;
+    virtual double perimeter() const = 0;
+    virtual void display() const = 0;
+};
 
 class Square : public TwoDShape {
 private:
@@ -47,3 +82,12 @@ public:
         cout << "Perimeter: " << perimeter() << endl;
     }
 };
+
+int main() {
+    Square s("Square1", 0, 10, 4);
+
+    s.display();
+    cout << endl;
+
+    return 0;
+}
