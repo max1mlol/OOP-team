@@ -71,7 +71,7 @@ public:
     }
 
     void display() const override {
-        cout << "=== Square ===" << endl;
+        cout << "Square" << endl;
         cout << "Name: " << name << endl;
         cout << "Side: " << side << endl;
         cout << "Vertices:" << endl;
