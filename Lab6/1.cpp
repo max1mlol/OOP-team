@@ -99,7 +99,7 @@ private:
 
 public:
     // leftTop = зүүн дээд орой
-    Square(string n, double x, double y, double s) : TwoDshape(n, "White"){
+    Square(string n, double x, double y, double s) : TwoDshape(n, "White"), side(s) {
         side = s;
 
         // Зүүн дээд орой
