@@ -118,6 +118,7 @@ public:
     }
 
 void showInfo() const override {
+    TwoDshape::showInfo();
     cout << "Area: " << area() << endl;
     cout << "Perimeter: " << perimeter() << endl;
     cout << "----------------------------------------------------" << endl;
