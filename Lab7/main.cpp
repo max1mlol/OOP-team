@@ -209,7 +209,7 @@ int main() {
 
     // Периметрээр эрэмбэлэх
     sortByPerimeter(Shapes, N);
-    cout << "============ PERIMETREGEER EREMBELSENII DARAA ============" << endl;
+    cout << "============ PERIMETREER EREMBELSENII DARAA ============" << endl;
     for (int i = 0; i < N; i++) {
         Shapes[i]->showInfo();
     }
