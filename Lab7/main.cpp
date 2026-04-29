@@ -1,9 +1,7 @@
 #include <iostream>
 #include <string>
-#include <cmath>
+#include <math.h>
 using namespace std;
-
-const double PI = 3.14159265358979323846;
 
 // Эх класс Shape
 class Shape {
@@ -105,11 +103,11 @@ public:
         : TwoDshape(n, c), ox(x), oy(y), radius(r) {}
 
     double area() const override {
-        return PI * this->radius * this->radius; // this ашиглах
+        return M_PI * this->radius * this->radius; // this ашиглах
     }
 
     double perimeter() const override {
-        return 2 * PI * this->radius; // this ашиглах
+        return 2 * M_PI * this->radius; // this ашиглах
     }
 
     void showInfo() const override {
