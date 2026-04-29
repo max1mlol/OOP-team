@@ -194,24 +194,24 @@ int main() {
     Shapes[2] = new Square("Square", 0, 10, 4);
 
     // Статик хувьсагчаар нийт объектийн тоог хэвлэх
-    cout << "Нийт үүссэн объектийн тоо: " << Shape::getObjectCount() << endl;
+    cout << "Niit uussen object iin too: " << Shape::getObjectCount() << endl;
     cout << endl;
 
-    cout << "============ ЭРЭМБЭЛЭХИЙН ӨМНӨ ============" << endl;
+    cout << "============ EREMBELEHIIN UMNU ============" << endl;
     for (int i = 0; i < N; i++) {
         Shapes[i]->showInfo();
     }
 
     // Талбайгаар эрэмбэлэх
     sortByArea(Shapes, N);
-    cout << "============ ТАЛБАЙГААР ЭРЭМБЭЛСНИЙ ДАРАА ============" << endl;
+    cout << "============ TALBAIGAAR EREMBELSENII DARAA ============" << endl;
     for (int i = 0; i < N; i++) {
         Shapes[i]->showInfo();
     }
 
     // Периметрээр эрэмбэлэх
     sortByPerimeter(Shapes, N);
-    cout << "============ ПЕРИМЕТРЭЭР ЭРЭМБЭЛСНИЙ ДАРАА ============" << endl;
+    cout << "============ PERIMETREGEER EREMBELSENII DARAA ============" << endl;
     for (int i = 0; i < N; i++) {
         Shapes[i]->showInfo();
     }
@@ -221,7 +221,7 @@ int main() {
         delete Shapes[i];
     }
 
-    cout << "\nУстгасны дараа объектийн тоо: " << Shape::getObjectCount() << endl;
+    cout << "\nUstgasnii daraah object iin too: " << Shape::getObjectCount() << endl;
 
     return 0;
 }
