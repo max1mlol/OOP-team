@@ -48,7 +48,7 @@ protected:
 public:
     TwoDshape(string n, string c) : Shape(n), color(c) {}
 
-    // Жинхэнэ хийсвэр функцүүд (pure virtual)
+    // Жинхэнэ хийсвэр функцүүд
     virtual double area() const = 0;
     virtual double perimeter() const = 0;
 
